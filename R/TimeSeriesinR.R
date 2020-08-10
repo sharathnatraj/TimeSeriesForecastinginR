@@ -1,10 +1,10 @@
 ---
-  title: "FDA_Time_Series_1"
+title: "Time_Series_Template_in_R"
 author: "Sharath"
 date: "07/08/2020"
 output: html_document
 editor_options:
-  chunk_output_type: console
+chunk_output_type: console
 ---
 library(kernlab)
 library(kknn)
