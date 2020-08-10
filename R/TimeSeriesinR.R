@@ -27,7 +27,7 @@ data = read.delim("301_Train_1.csv", sep = ",")
 data.ts = ts(data,start=c(2017,1),end=c(2019,334),frequency=365)
 data.ts
 #Test on 2019 December
-data.test = ts(data,start=c(2019,335),)
+data.test = ts(data,start=c(2019,335))
 data.test
 ###################################################################################
 #Preliminary data analysis
