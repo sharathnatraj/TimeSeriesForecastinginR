@@ -19,7 +19,7 @@ library(GeneCycle)
 #Setting the seed to retain the randomness and reading the temps file
 ###################################################################################
 set.seed(1245)
-data = read.delim("Train.csv", sep = ",")
+data = read.delim("301_Train_1.csv", sep = ",")
 ###################################################################################
 #Convert the data into timeseries
 ###################################################################################
@@ -27,7 +27,7 @@ data = read.delim("Train.csv", sep = ",")
 data.ts = ts(data,start=c(2017,1),end=c(2019,334),frequency=365)
 data.ts
 #Test on 2019 December
-data.test = window(data,start=c(2019,335),)
+data.test = ts(data,start=c(2019,335),)
 data.test
 ###################################################################################
 #Preliminary data analysis
