@@ -36,7 +36,7 @@ cat(data.test)
 #Preliminary data analysis
 ###################################################################################
 autoplot(data.ts) +
-  ggtitle("Flight bookings - Actuals from 2017 to 2019") +
+  ggtitle("Bookings - Actuals from 2017 to 2019") +
   ylab("Booking counts per day")
 ###################################################################################
 #Difference of data
@@ -46,13 +46,13 @@ diff.ts = diff(data.ts)
 #Preliminary analysis of differenced data
 ###################################################################################
 autoplot(diff.ts) +
-  ggtitle("Flight bookings - Actuals from 2017 to 2019") +
+  ggtitle("Bookings - Actuals from 2017 to 2019") +
   ylab("Booking counts per day")
 ###################################################################################
 #Seasonality analysis
 ###################################################################################
 ggseasonplot(diff.ts) +
-  ggtitle("Seasonal plot - Flight bookings") +
+  ggtitle("Seasonal plot - bookings") +
   ylab("Booking counts per day")
 ###################################################################################
 ## fit the data to ES
